@@ -122,29 +122,29 @@
         <section>
             <h2>Contacto</h2>
 
-            <form class="formulario">
+            <form class="formulario" method="POST" netlify>
                 <fieldset>
                     <legend>Contáctantanos llenando todos los campos</legend>
 
                     <div class="contenedor-campos">
                         <div class="campo">
                             <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                            <input class="input-text" type="text" name="Nombre" placeholder="Tu Nombre">
                         </div>
 
                         <div class="campo">
                             <label>Teléfono</label>
-                            <input class="input-text" type="tel"placeholder="Tu Télefono">
+                            <input class="input-text" type="tel" name="Teléfono" placeholder="Tu Télefono">
                         </div>
 
                         <div class="campo">
                             <label for="">Correo</label>
-                            <input class="input-text" type="email" placeholder="Tu Email">
+                            <input class="input-text" type="email" name="Email" placeholder="Tu Email">
                         </div>
 
                         <div class="campo">
                             <label>Mensaje</label>
-                            <textarea class="input-text"></textarea>
+                            <textarea class="input-text" name="Mensaje"></textarea>
                         </div>
                     </div> <!--Contenedor-campos-->
 
