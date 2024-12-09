@@ -102,3 +102,35 @@ h3{
 .navegacion__enlace:hover, .navegacion__enlace--activo{
     color: var(--secundario);
 }
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/* Productos */
+.producto {
+
+}
+
+.producto__imagen {
+
+}
+
+.producto__informacion {
+
+}
+
+.producto__nombre {
+
+}
+
+.producto__precio {
+
+}
