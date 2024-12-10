@@ -12,6 +12,6 @@ resultado = Math.abs(-200); // Absoluto
 resultado = Math.min(3, 5, 1, 8, 2); // Numero minimo
 resultado = Math.max(3, 5, 1, 8, 2); // Numero maximo
 resultado = Math.random(); // Aleatorio
-resultado = floor(Math.random() * 30);
+resultado = Math.floor(Math.random() * 30);
 
 console.log(resultado);
