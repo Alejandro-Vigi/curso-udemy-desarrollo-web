@@ -1,4 +1,4 @@
-// Objeto Math
+// Objeto Math para numeros
 
 let resultado;
 

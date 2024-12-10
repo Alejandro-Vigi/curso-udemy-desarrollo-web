@@ -1,3 +1,5 @@
+// Como hacer concatenación, nuevas formas y viejas
+
 const nombre = "Alejandro";
 const email = "correo@correo.com"
 
