@@ -92,6 +92,10 @@ img {
     }
 }
 
+.barra{
+    padding-top: 4rem;
+}
+
 @media (min-width: 768px) {
     .barra {
         display: flex;
@@ -198,4 +202,12 @@ img {
 .widget-curso__info,
 .widget-curso__label {
     font-size: 2rem;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
 }
