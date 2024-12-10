@@ -16,4 +16,4 @@ console.log(numero3 % numero4);
 const cliente = "Alejandro";
 const cliente2 = "Pablo";
 
-console.log(cliente * cliente2)
+console.log(cliente * cliente2);
