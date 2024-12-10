@@ -20,7 +20,7 @@ const producto = {
 // console.log(producto["precio"]);
 
 // Agregar nuevas propiedades
-producto.imagen = 'imagen.jpg'
+producto.imagen = 'imagen.jpg';
 console.log(producto);
 
 // Eliminar propiedades
