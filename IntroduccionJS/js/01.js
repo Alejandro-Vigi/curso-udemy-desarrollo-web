@@ -22,3 +22,4 @@ var NombreProducto = 'Monitor HD'; // Pascalcase
 var nombreproducto = 'Monitor HD';
 
 console.log(producto)
+
