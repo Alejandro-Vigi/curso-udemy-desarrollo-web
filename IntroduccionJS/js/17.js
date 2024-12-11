@@ -24,3 +24,24 @@ sumar2();
 })();
 
 
+// Hoisting (En el primer mandado a llamar registra funciones y despues las ejecuta (manda a llamar))
+
+// No da error mandar a llamar una funcion y despues declararla de esta forma
+
+// Se manda a llamar
+sumar3();
+
+// Declaracion de funcion
+function sumar3(){
+    console.log(10+10);
+};
+
+// Si da error si intentamos llamar esta funcion y despues declararla de esta forma
+
+// Se manda llamar 
+sumar4();
+
+// Expresion de la funcion
+const sumar4 = function() {
+    console.log(3+3);
+}
