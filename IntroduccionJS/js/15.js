@@ -47,6 +47,8 @@ meses2 = ['Enero', 'Febrero', 'Marzo', 'Abril'];
 meses.splice(2, 1)
 console.table(meses2)
 
+// Rest Operator o Spread Operator
+
 // Haciendo un nuevo arreglo para no operar los ya creados ingresandolos al final
 const nuevoArreglo = [...meses2, 'Mayo', 'Junio'];
 console.log(nuevoArreglo);
