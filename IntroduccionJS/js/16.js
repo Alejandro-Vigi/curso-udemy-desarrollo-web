@@ -21,28 +21,28 @@ meses.forEach (function(mes){
     }
 });
 
-// Includes para arreglo sin objetos
+// Includes para arreglo sin objetos (Retorna un true si lo contiene)
 let resultado = meses.includes('Marzo');
 console.log(resultado);
 
-// Para arreglo con objetos
+// Para arreglo con objetos (Retorna un true si lo tiene)
 resultado = carrito.some(function(producto){
     return producto.nombre === 'Celular';
 });
 
-// Reduce
+// Reduce (Obtengo el total de la suma de los productos)
 resultado = carrito.reduce(function(total, producto){
     return total + producto.precio
 }, 0); 
 
 console.log(resultado);
 
-// Con array function
+// Con array function el equivalente a la suma de productos
 resultado = carrito.reduce((total, producto) => total + producto.precio, 0); 
 
 console.log(resultado);
 
-// Filter 
+// Filter (Sirve para filtrar objetos en base a una condicion)
 resultado = carrito.filter(function(producto){
     return producto.precio > 400
 });
