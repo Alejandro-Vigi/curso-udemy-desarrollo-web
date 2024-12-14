@@ -12,7 +12,7 @@ const reproductor = {
     },
     reproducirPlaylist : function(nombre){
         console.log(`Reproduciendo la Playlist: ${nombre}`);
-    },
+    }
 }
 
 reproductor.borrarCancion = function(id) {
