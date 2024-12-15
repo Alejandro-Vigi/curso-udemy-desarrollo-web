@@ -25,16 +25,30 @@ const carrito = [
     { nombre: 'Laptop', precio:800}
 ];
 
-for(let i = 0; i <= carrito.length ; i++){
+for(let i = 0; i <= carrito.length-1 ; i++){
     console.log(carrito[i].nombre);
 }
 
-
 // While loop
 
+let i = 0; // Indice
 
-
-
-
+while(i <= carrito.length-1){ // Condicion
+    if(i % 2 == 0){
+        console.log(`El nombre del producto impar ${i} es ${carrito[i].nombre}.`);
+    } else {
+        console.log(`El número del producto par ${i} es ${carrito[i].nombre}.`);   
+    }
+    i++; // Incremento
+};
 
 // Do while loop
+
+// Ejecuta el codigo al menos una vez y despues revisa si se cumple la condicion
+
+i = 0;
+
+do{
+    console.log(i);
+    i++;
+}while(i < 10);
