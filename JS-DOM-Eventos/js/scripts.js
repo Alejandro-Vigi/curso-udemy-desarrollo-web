@@ -37,3 +37,39 @@ const navegacion = document.querySelector('.navegacion');
 navegacion.appendChild(nuevoEnlace);
 
 console.log(nuevoEnlace);
+
+
+// Eventos
+
+console.log(1);
+
+// callback
+window.addEventListener('load',function(){ // Load espera a que JS y los archivos que dependen del HTML esten listos
+    console.log(2);
+})
+
+// Es lo mismo que load pero distinta sintaxis
+window.onload = function(){
+    console.log(3);
+}
+
+// Solamente se espera a que se descargue el HTML pero no espera CSS ni imagenes y se ejecuta primero
+document.addEventListener('DOMContentLoaded',function(){
+    console.log(4);
+})
+
+console.log(5);
+
+// Para implementarlo con funciones
+
+window.addEventListener('load', imprimir);
+
+function imprimir(){
+    console.log(6);
+}
+
+// Más eventos
+
+window.onscroll = function() {
+    console.log('Scroling...')
+}
