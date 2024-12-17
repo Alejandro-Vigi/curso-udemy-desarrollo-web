@@ -79,9 +79,8 @@ const btnEnviar = document.querySelector('.boton--primario');
 btnEnviar.addEventListener('click',function(e){
     console.log(e);
     e.preventDefault();
-    console.log('Enviando formulario...')
+    console.log('enviando formulario...')
 })
-
 
 // Eventos de los inputs y de los textarea
 
@@ -132,3 +131,13 @@ function leerTexto(e){
     datos[e.target.id] = e.target.value;
     console.log(datos);
 }
+
+// El evento de Submit
+const formulario = document.querySelector('.formulario');
+formulario.addEventListener('submit', function(evento){
+    evento.preventDefault();
+
+    // Validar formulario
+
+    // Enviar fomulario
+})
