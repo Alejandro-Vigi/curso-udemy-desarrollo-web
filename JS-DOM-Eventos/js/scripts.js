@@ -71,7 +71,7 @@ function imprimir(){
 // Más eventos
 
 window.onscroll = function() {
-    console.log('Scroling...')
+    console.log('Scrolling...')
 }
 
 // Seleccionar elementos y asociarles un evento
@@ -129,15 +129,25 @@ function leerTexto(e){
     // console.log(e.target.value);
 
     datos[e.target.id] = e.target.value;
-    console.log(datos);
+    // console.log(datos);
 }
 
-// El evento de Submit
-const formulario = document.querySelector('.formulario');
-formulario.addEventListener('submit', function(evento){
-    evento.preventDefault();
+// // El evento de Submit
+// const formulario = document.querySelector('.formulario');
+// formulario.addEventListener('submit', function(evento){
+//     evento.preventDefault();
 
-    // Validar formulario
+//     // Validar formulario
 
-    // Enviar fomulario
-})
+//     const {nombre, email, mensaje} = datos;
+
+//     if(nombre === '' || email === '' || mensaje === ''){
+//         console.log('Todos los campos son obligatorios');
+//         return; 
+//     }
+
+//     // Enviar fomulario
+
+//     console.log('Enviando formulario');
+
+// })
