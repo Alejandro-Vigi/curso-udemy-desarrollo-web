@@ -81,3 +81,54 @@ btnEnviar.addEventListener('click',function(e){
     e.preventDefault();
     console.log('Enviando formulario...')
 })
+
+
+// Eventos de los inputs y de los textarea
+
+// change: Cada que se modifica se realiza
+const nombre = document.querySelector('#nombre');
+// nombre.addEventListener('change', function(){
+//     console.log('Escribiendo - cada cambio');
+// })
+
+// input: Cada caracter ingresado funciona como el evento
+const nombre2 = document.querySelector('#nombre');
+// nombre2.addEventListener('input', function(){
+//     console.log('Escribiendo - continuamente');
+// })
+
+
+// Enviando a la terminal lo que se escribe en el input
+const nombre3 = document.querySelector('#nombre')
+// nombre3.addEventListener('input', function(e){
+//     console.log(e.target.value);
+// })
+
+// Reduciendo codigo para fijar en los 3 campos
+const nombre4 = document.querySelector('#nombre');
+const nombre5 = document.querySelector('#email');
+const nombre6 = document.querySelector('#mensaje');
+
+nombre4.addEventListener('input', leerTexto);
+nombre5.addEventListener('input', leerTexto);
+nombre6.addEventListener('input', leerTexto);
+
+// Arreglo para validar el formulario
+
+// e o bien event : Es el objeto del evento
+// e.target :       Es el elemento de html en el que ocurrio el evento
+// e.target.id :    Es el campo en html con el id, por ejemplo id="nombre"
+// e.target.value : Es el contenido actual (valor) del campo donde el usuario está escribiendo.
+
+const datos = {
+    nombre : '',
+    email : '',
+    mensaje : ''
+}
+
+function leerTexto(e){
+    // console.log(e.target.value);
+
+    datos[e.target.id] = e.target.value;
+    console.log(datos);
+}
